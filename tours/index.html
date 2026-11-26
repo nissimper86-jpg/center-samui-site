@@ -41,7 +41,7 @@ h2{margin:0;font-size:1.45rem;font-weight:800}
 .why h2{margin-bottom:10px}
 .why ul{margin:0;padding-inline-start:20px}
 .why li{margin:4px 0}
-.promo{background:var(--card);border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.35);margin-top:6px}
+.promo{grid-column:1/-1;background:var(--card);border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.35)}
 .promo img{width:100%;height:auto}
 .promo p{margin:0;padding:14px 18px 18px}
 .promo span{color:var(--mist);font-size:.9rem}
@@ -66,12 +66,8 @@ fbq('track','PageView');
 <header>
   <div class="brand"><img src="../logo.jpg" alt="">המרכז הישראלי קו סמוי</div>
   <h1>הטיולים הכי שווים בקוסמוי</h1>
-  <p class="sub">עכשיו במבצע עד 20% הנחה. סוגרים לכם הכל בעברית, עם איסוף מהמלון.</p>
+  <p class="sub">סוגרים לכם הכל בעברית, עם איסוף מהמלון. בוחרים טיול ושולחים הודעה.</p>
 </header>
-<section class="promo" id="promo">
-  <img src="../promo-flyer.jpg" alt="מבצע: אטרקציה אחת 10% הנחה, שתיים 15%, שלוש ומעלה 20%" width="1254" height="1254">
-  <p><b>כל הטיולים בדף במבצע:</b> אטרקציה אחת 10% הנחה, שתיים 15%, שלוש ומעלה 20%.<br><span>*המבצע בתוקף בהגעה למשרד בקוסמוי והצגת המודעה.</span></p>
-</section>
 <main class="grid">
   <article class="card" id="angthong">
     <div class="pic"><img src="../angthong-1.jpg" alt="שמורת אנג תונג" loading="eager" width="900" height="600"><span class="rib">יום שלם</span></div>
@@ -109,6 +105,10 @@ fbq('track','PageView');
       <a class="btn" data-tour="zipline" href="https://wa.me/972559237382?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%9E%D7%95%D7%93%D7%A2%D7%94%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%95%D7%9E%D7%97%D7%99%D7%A8%20%D7%A2%D7%9C%20%D7%90%D7%95%D7%9E%D7%92%D7%95%D7%AA%20%D7%91%D7%92%27%D7%95%D7%A0%D7%92%D7%9C%20%D7%91%D7%A7%D7%95%D7%A1%D7%9E%D7%95%D7%99">לפרטים ומחיר בוואטסאפ</a>
     </div>
   </article>
+  <section class="promo" id="promo">
+  <img src="../promo-flyer.jpg" alt="מבצע: אטרקציה אחת 10% הנחה, שתיים 15%, שלוש ומעלה 20%" width="1254" height="1254">
+  <p><b>ועכשיו כל הטיולים בדף במבצע:</b> אטרקציה אחת 10% הנחה, שתיים 15%, שלוש ומעלה 20%.<br><span>*המבצע בתוקף בהגעה למשרד בקוסמוי והצגת המודעה.</span></p>
+</section>
   <article class="card" id="elephants">
     <div class="pic"><img src="../elephants-1.jpg" alt="חוות פילים" loading="lazy" width="900" height="600"><span class="rib">כ-3 שעות</span></div>
     <div class="txt">
