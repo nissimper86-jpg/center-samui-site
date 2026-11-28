@@ -74,32 +74,8 @@ header h1{animation-delay:.12s}header .sub{animation-delay:.24s}
 @keyframes bob{0%,100%{translate:0 0}50%{translate:0 -5px}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.card.pre{opacity:1;--ty:0px;--rx:2deg;--sc:1}}
 .hotels{margin:8px 0 30px}
-.hhero{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:4/3;max-height:560px;width:100%;border:1px solid rgba(150,195,255,.3);box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 18px 30px -8px rgba(0,0,0,.65),0 40px 60px -30px rgba(30,107,255,.55)}
-@media(min-width:700px){.hhero{aspect-ratio:16/8}}
-.hhero>img{width:100%;height:100%;object-fit:cover;animation:kb2 16s ease-in-out infinite alternate}
-@keyframes kb2{from{transform:scale(1.04)}to{transform:scale(1.14) translateY(-2%)}}
-.hhero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,11,31,.05) 30%,rgba(3,11,31,.85) 100%)}
-.hcopy{position:absolute;z-index:2;inset-inline:18px;bottom:18px}
-.hkick{display:inline-block;font-weight:800;font-size:.85rem;padding:5px 12px;border-radius:999px;background:linear-gradient(180deg,#6fb6ff,#1e6bff);box-shadow:0 4px 10px rgba(0,0,0,.4)}
-.hline{margin:8px 0 0;font-weight:800;font-size:clamp(1.35rem,5.2vw,2.1rem);line-height:1.2;text-shadow:0 3px 14px rgba(0,0,0,.7)}
-.hstack{position:absolute;z-index:2;top:16px;left:16px;display:flex;direction:ltr}
-.hstack img{width:74px;height:74px;object-fit:cover;border-radius:14px;border:2px solid #fff;box-shadow:0 8px 18px rgba(0,0,0,.5);margin-left:-22px;transform:rotate(-6deg)}
-.hstack img:first-child{margin-left:0}.hstack img:nth-child(2){transform:rotate(4deg) translateY(10px)}.hstack img:nth-child(3){transform:rotate(-2deg)}
-@media(min-width:700px){.hstack img{width:110px;height:110px}}
-.hsub{color:var(--mist);text-align:center;margin:14px 0 10px;font-size:.95rem}
-.hrow{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 16px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-.hrow::-webkit-scrollbar{display:none}
-.hcard{flex:0 0 68%;max-width:280px;scroll-snap-align:start;position:relative;border-radius:18px;overflow:hidden;text-decoration:none;color:#fff;background:linear-gradient(160deg,#143a80,#071a3d);border:1px solid rgba(150,195,255,.28);box-shadow:0 12px 24px -8px rgba(0,0,0,.6);aspect-ratio:3/4}
-.hcard img{width:100%;height:100%;object-fit:cover}
-.hcard::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(3,11,31,.9))}
-.hname,.harea{position:absolute;z-index:1;inset-inline:14px}
-.hname{bottom:40px;font-weight:800;font-size:1.2rem}
-.harea{bottom:16px;color:var(--ice);font-size:.88rem}
-.hmore{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:6px;padding:18px}
-.hmore::after{display:none}
-.hmore .hname,.hmore .harea{position:static}
-.hgo{margin-top:10px;font-weight:800;padding:10px 16px;border-radius:999px;background:linear-gradient(180deg,#4f9bff,#1450d6);box-shadow:0 4px 0 #0b3696}
-@media(prefers-reduced-motion:reduce){.hhero>img{animation:none}}
+.hcol{width:100%;height:auto;border-radius:24px;border:1px solid rgba(150,195,255,.3);box-shadow:0 18px 30px -8px rgba(0,0,0,.65),0 40px 60px -30px rgba(30,107,255,.55)}
+.hotels .btn{max-width:520px;margin:16px auto 0}
 .party{margin:8px 0 28px}.party-title{text-align:center;font-size:1.6rem;margin:0 0 4px;background:linear-gradient(180deg,#fff,#a9cdff);-webkit-background-clip:text;background-clip:text;color:transparent}.party-sub{text-align:center;color:var(--mist);margin:0 0 16px}
 </style>
 <!-- Meta Pixel -->
@@ -213,38 +189,8 @@ fbq('track','PageView');
   </div>
 </section>
 <section class="hotels" id="hotels">
-  <div class="hhero">
-    <img src="../hotels-hero.jpg" alt="בריכה בין עצי קוקוס מול הים" loading="lazy" width="1200" height="900">
-    <div class="hstack" aria-hidden="true"><img src="../hotel-kalima.jpg" alt=""><img src="../hotel-sala.jpg" alt=""><img src="../hotel-kupukupu.jpg" alt=""></div>
-    <div class="hcopy">
-      <span class="hkick">מלונות בתאילנד</span>
-      <p class="hline">הזמנת מלונות רק במרכז ישראלי<br>עם יחס אישי ומחירים לכל כיס</p>
-    </div>
-  </div>
-  <p class="hsub">כמה מהמלונות שביקרנו בהם בעצמנו. גוללים הצידה ✦ לוחצים על מלון ומקבלים הצעה בוואטסאפ</p>
-  <div class="hrow">
-    <a class="hcard" data-tour="hotel-1" href="https://wa.me/972559237382?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%9E%D7%95%D7%93%D7%A2%D7%94%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%94%20%D7%9C%D7%9E%D7%9C%D7%95%D7%9F%20%D7%91%D7%A7%D7%99%D7%9E%D7%A4%D7%98%D7%95%D7%9F%20%D7%A7%D7%99%D7%98%D7%9C%D7%99%20%D7%91%D7%A7%D7%95%D7%A1%D7%9E%D7%95%D7%99">
-      <img src="../hotel-kimpton.jpg" alt="קימפטון קיטלי" loading="lazy" width="900" height="675">
-      <span class="hname">קימפטון קיטלי</span><span class="harea">קוסמוי · בריכה עד הים</span>
-    </a>
-    <a class="hcard" data-tour="hotel-2" href="https://wa.me/972559237382?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%9E%D7%95%D7%93%D7%A2%D7%94%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%94%20%D7%9C%D7%9E%D7%9C%D7%95%D7%9F%20%D7%91%D7%A1%D7%90%D7%9C%D7%94%20%D7%A1%D7%9E%D7%95%D7%99">
-      <img src="../hotel-sala.jpg" alt="סאלה סמוי" loading="lazy" width="900" height="675">
-      <span class="hname">סאלה סמוי</span><span class="harea">קוסמוי · עיצוב לבן ורגוע</span>
-    </a>
-    <a class="hcard" data-tour="hotel-3" href="https://wa.me/972559237382?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%9E%D7%95%D7%93%D7%A2%D7%94%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%94%20%D7%9C%D7%9E%D7%9C%D7%95%D7%9F%20%D7%91%D7%A7%D7%95%D7%A4%D7%95%20%D7%A7%D7%95%D7%A4%D7%95%20%D7%91%D7%A7%D7%95%D7%A4%D7%A0%D7%92%D7%9F">
-      <img src="../hotel-kupukupu.jpg" alt="קופו קופו" loading="lazy" width="900" height="675">
-      <span class="hname">קופו קופו</span><span class="harea">קופנגן · נוף לים וספא</span>
-    </a>
-    <a class="hcard" data-tour="hotel-4" href="https://wa.me/972559237382?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%9E%D7%95%D7%93%D7%A2%D7%94%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%94%20%D7%9C%D7%9E%D7%9C%D7%95%D7%9F%20%D7%91%D7%A7%D7%9C%D7%99%D7%9E%D7%94%20%D7%91%D7%A4%D7%95%D7%A7%D7%98">
-      <img src="../hotel-kalima.jpg" alt="קלימה" loading="lazy" width="900" height="675">
-      <span class="hname">קלימה</span><span class="harea">פוקט · שקיעה מעל הים</span>
-    </a>
-    <a class="hcard" data-tour="hotel-5" href="https://wa.me/972559237382?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%9E%D7%95%D7%93%D7%A2%D7%94%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%94%20%D7%9C%D7%95%D7%99%D7%9C%D7%94%20%D7%A2%D7%9D%20%D7%91%D7%A8%D7%99%D7%9B%D7%94%20%D7%A4%D7%A8%D7%98%D7%99%D7%AA">
-      <img src="../hotel-kalima-villa.jpg" alt="וילות עם בריכה פרטית" loading="lazy" width="900" height="675">
-      <span class="hname">וילות עם בריכה פרטית</span><span class="harea">בכל האיים</span>
-    </a>
-    <a class="hcard hmore" data-tour="hotel-more" href="https://wa.me/972559237382?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%9E%D7%95%D7%93%D7%A2%D7%94%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%94%20%D7%9C%D7%9E%D7%9C%D7%95%D7%9F%20%D7%91%D7%AA%D7%90%D7%99%D7%9C%D7%A0%D7%93"><span class="hname">ועוד מאות מלונות</span><span class="harea">בקוסמוי, קופנגן, פוקט ובנגקוק</span><span class="hgo">שלחו לנו תאריכים</span></a>
-  </div>
+  <img class="hcol" src="../hotels-collage.jpg" alt="הזמנת מלונות רק במרכז ישראלי עם יחס אישי ומחירים לכל כיס" loading="lazy" width="1080" height="1230">
+  <a class="btn" data-tour="hotels" href="https://wa.me/972559237382?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%9E%D7%95%D7%93%D7%A2%D7%94%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%A2%D7%94%20%D7%9C%D7%9E%D7%9C%D7%95%D7%9F%20%D7%91%D7%AA%D7%90%D7%99%D7%9C%D7%A0%D7%93">לקבלת הצעה למלון בוואטסאפ</a>
 </section>
 <section class="why">
   <h2>למה דרכנו?</h2>
